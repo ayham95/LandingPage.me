@@ -26,8 +26,59 @@ $(function () { //everything so far need to be placed in a function as a selecto
 
 
 
+$(function (){
+    $('.info1').hover(
+        function () {
+            $('.icon1').css({"background-color":"#40e0d0"});
+        },
+        function () {
+            $('.icon1').css({"background-color":" #333"});
+        })
+
+
+
+
+    $('.info2').hover(
+        function () {
+            $('.icon2').css({"background-color":"#40e0d0"});
+
+        },
+        function () {
+            $('.icon2').css({"background-color":" #333"});
+        }
+    )
+
+
+
+    $('.info3').hover(
+        function () {
+            $('.icon3').css({"background-color":"#40e0d0"});
+
+        },
+        function () {
+            $('.icon3').css({"background-color":" #333"});
+        }
+    )
+
+
+
+    $('.info4').hover(
+        function () {
+            $('.icon4').css({"background-color":"#40e0d0"});
+
+        },
+        function () {
+            $('.icon4').css({"background-color":" #333"});
+        }
+    )
+
+
+});
+
+
 
 $(function () {
+
     $('.card').hover(
 
         function () {
@@ -44,5 +95,42 @@ $(function () {
 
         }
     );
+
+
+        $('.card2').hover(
+
+            function () {
+                //$(this).css({ "height":"2000px" ,"transition":"500ms"});
+                $('.test2').css({"height":"200px","transition":"500ms"});
+                //$('#clientJoy').css({"text-align":"left","transition":"1000ms"})
+            },
+
+            function () {
+                //$(this).css({"height":"110px" ,"transition":"500ms"});
+                $('.test2').css({"height":"0","transition":"500ms"});
+                //$('#clientJoy').css({"text-align":"center","transition":"1000ms"})
+
+
+            }
+        );
+
+    
+        $('.card3').hover(
+
+            function () {
+                //$(this).css({ "height":"2000px" ,"transition":"500ms"});
+                $('.test3').css({"height":"200px","transition":"500ms"});
+                //$('#clientJoy').css({"text-align":"left","transition":"1000ms"})
+            },
+
+            function () {
+                //$(this).css({"height":"110px" ,"transition":"500ms"});
+                $('.test3').css({"height":"0","transition":"500ms"});
+                //$('#clientJoy').css({"text-align":"center","transition":"1000ms"})
+
+
+            }
+        );
+
 
 });

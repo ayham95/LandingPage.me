@@ -2,7 +2,20 @@ body{
     background: url("other/header_background.png") no-repeat center;
     background-attachment: fixed;
     background-size: cover;
+    width: auto;
 }
+
+
+h1,h2,h3,h4,h5,h6,p{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #4a4a4a;
+}
+
+.material-icons.md-18 { font-size: 18px; margin-top: 15px}
+.material-icons.md-24 { font-size: 24px; margin-top: 10px}
+.material-icons.md-36 { font-size: 36px; margin-top: 15px }
+.material-icons.md-48 { font-size: 48px; margin-top: 10px}
+
 
 .home-first-section{
     height: 500px;
@@ -31,48 +44,88 @@ body{
 .nav{
     float: right;
 }
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
+.navbar-default .navbar-nav  li  a:hover,
+.navbar-default .navbar-nav  li  a:focus {
     color: #40e0d0;
 }
-
 
 
 
 .aboutUs{
     padding-top: 50px;
     width: 100%;
-    height: 1800px;
+    height: 820px;
     background: white;
 }
-.aboutUsPadding{
+.aboutUsPadding{      /* for the navBar animation */
     padding-top: 100px;
 }
 
-#aboutText{
-    font-family: "Lucida Grande";
-    color: #4A4A4A;
+.title{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    float: none;
+    max-width: 92%;
 }
 
-.card{
-    padding: 20px;
-    width: 200px;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
-    transition: 400ms;
-}
-.card:hover{
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    transition: 400ms;
+.title h1{
+    text-transform: uppercase;
+    color: #515151;
+    font-size: 48px;
+    font-weight: 300;
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.card p {
-    height: 0px;
-    overflow: auto;
+.title hr{
+    border-color: #40e0d0;
+    width: 20%;
+}
+
+.info{
+    padding-top: 50px;
+}
+
+.left-icon-box{
+    float: right;
+}
+
+.right-icon-box{
+    float: left;
+}
+
+.left-icon , .right-icon{
+    display: block;
+    margin: 0 auto;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    border-radius: 50%;
+    margin-top: 10px;
+    transition: .3s;
+}
+
+
+
+.row{
+    margin-top: 30px;
+}
+
+
+.left-col h3,p{
+    text-align: right;
+    margin-top: 10px;
+}
+
+.right-col p,h3{
     text-align: left;
+    margin-top: 10px;
 }
 
-.card h1{
-    font-family: "Lucida Grande";
-    color: #4A4A4A;
-}
+
+
 
