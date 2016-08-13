@@ -9,14 +9,21 @@ function test() {
 
 
 $(function () { //everything so far need to be placed in a function as a selector
-    var stickyHeaderTop = $('.myNavBar').offset().top;
+    var stick = $('.myNavBar').offset().top;
 
     $(window).scroll(function () {
-        if ($(window).scrollTop() >= stickyHeaderTop) {
-            $('.myNavBar').addClass('navbar-fixed-top').css({"box-shadow":"0 1px 2px rgba(0,0,0,0.2)","transition":"300ms"});
+        if ($(window).scrollTop() >= stick) {
+            $('.myNavBar').addClass('navbar-fixed-top').css({
+                "box-shadow": "0 1px 2px rgba(0,0,0,0.2)",
+                "transition": "300ms"
+            });
             $('.aboutUs').addClass('aboutUsPadding');
         } else {
-            $('.myNavBar').removeClass('navbar-fixed-top').css({"box-shadow":"0 0px 0px rgba(0,0,0,0.0)","transition":"300ms"});;
+            $('.myNavBar').removeClass('navbar-fixed-top').css({
+                "box-shadow": "0 0px 0px rgba(0,0,0,0.0)",
+                "transition": "300ms"
+            });
+            ;
             $('.aboutUs').removeClass('aboutUsPadding')
 
 
@@ -25,112 +32,71 @@ $(function () { //everything so far need to be placed in a function as a selecto
 });
 
 
-
-$(function (){
+$(function () {
     $('.info1').hover(
         function () {
-            $('.icon1').css({"background-color":"#40e0d0"});
+            $('.icon1').css({"background-color": "#40e0d0"});
         },
         function () {
-            $('.icon1').css({"background-color":" #333"});
+            $('.icon1').css({"background-color": " #333"});
         })
-
-
 
 
     $('.info2').hover(
         function () {
-            $('.icon2').css({"background-color":"#40e0d0"});
+            $('.icon2').css({"background-color": "#40e0d0"});
 
         },
         function () {
-            $('.icon2').css({"background-color":" #333"});
+            $('.icon2').css({"background-color": " #333"});
         }
     )
-
 
 
     $('.info3').hover(
         function () {
-            $('.icon3').css({"background-color":"#40e0d0"});
+            $('.icon3').css({"background-color": "#40e0d0"});
 
         },
         function () {
-            $('.icon3').css({"background-color":" #333"});
+            $('.icon3').css({"background-color": " #333"});
         }
     )
-
 
 
     $('.info4').hover(
         function () {
-            $('.icon4').css({"background-color":"#40e0d0"});
+            $('.icon4').css({"background-color": "#40e0d0"});
 
         },
         function () {
-            $('.icon4').css({"background-color":" #333"});
+            $('.icon4').css({"background-color": " #333"});
         }
     )
 
 
 });
+function test(num) {
 
+    switch (num) {
+        case 1:
+            $(function ($) {
+                $(document).ready(function () {
+                    $('html, body').animate({
+                        'scrollTop': $('#home').offset().top
+                    }, 2000);
+                });
+            });
+            break;
+        case 2:
+            (function ($) {
+                $(document).ready(function () {
+                    $('html, body').animate({
+                        'scrollTop': $('#aboutUs').offset().top
+                    }, 2000);
+                });
+            })(jQuery);
+            break;
 
-
-$(function () {
-
-    $('.card').hover(
-
-        function () {
-            //$(this).css({ "height":"2000px" ,"transition":"500ms"});
-            $('.test').css({"height":"200px","transition":"500ms"});
-            //$('#clientJoy').css({"text-align":"left","transition":"1000ms"})
-        },
-
-        function () {
-            //$(this).css({"height":"110px" ,"transition":"500ms"});
-            $('.test').css({"height":"0","transition":"500ms"});
-            //$('#clientJoy').css({"text-align":"center","transition":"1000ms"})
-
-
-        }
-    );
-
-
-        $('.card2').hover(
-
-            function () {
-                //$(this).css({ "height":"2000px" ,"transition":"500ms"});
-                $('.test2').css({"height":"200px","transition":"500ms"});
-                //$('#clientJoy').css({"text-align":"left","transition":"1000ms"})
-            },
-
-            function () {
-                //$(this).css({"height":"110px" ,"transition":"500ms"});
-                $('.test2').css({"height":"0","transition":"500ms"});
-                //$('#clientJoy').css({"text-align":"center","transition":"1000ms"})
-
-
-            }
-        );
-
-    
-        $('.card3').hover(
-
-            function () {
-                //$(this).css({ "height":"2000px" ,"transition":"500ms"});
-                $('.test3').css({"height":"200px","transition":"500ms"});
-                //$('#clientJoy').css({"text-align":"left","transition":"1000ms"})
-            },
-
-            function () {
-                //$(this).css({"height":"110px" ,"transition":"500ms"});
-                $('.test3').css({"height":"0","transition":"500ms"});
-                //$('#clientJoy').css({"text-align":"center","transition":"1000ms"})
-
-
-            }
-        );
-
-
-});
+    }
+}
